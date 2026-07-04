@@ -6,70 +6,161 @@
 
 ---
 
-##  Overview
+## 📖 Overview
 
-A Python automation tool that automatically formats Excel spreadsheets into clean, structured, and report-ready files.
+A Python automation tool that formats Excel spreadsheets automatically.
 
-It loads an existing workbook, applies professional styling, inserts calculated fields, and exports a formatted version without modifying the original file.
+The program loads an existing workbook, applies professional formatting, inserts summary formulas, adjusts layout, and saves the formatted workbook as a new file without modifying the original.
 
 ---
 
 ## ⭐ Why this project matters
 
-Manually formatting Excel files is repetitive, error-prone, and time-consuming—especially in reporting workflows.
+Formatting Excel files manually is repetitive and time-consuming.
 
-This tool automates formatting tasks and transforms raw spreadsheets into clean, structured, and presentation-ready reports in seconds.
+This tool automates common formatting tasks, making spreadsheets cleaner, easier to read, and ready for reporting with a single execution.
 
 ---
 
-## 🧠 Key Features
+## 🧠 Features
 
-- 📂 Loads existing Excel workbooks safely  
-- ✅ Validates file input before processing  
-- 💾 Saves formatted output as a new file  
-- ➕ Automatically generates summary (Total) rows  
-- 🧮 Inserts dynamic Excel formulas (SUM)  
-- 💲 Formats currency and numeric columns  
-- 📏 Auto-adjusts column widths  
-- 🎨 Applies professional header styling  
-- 📌 Freezes header row for usability  
-- 🔍 Enables filtering for data analysis  
-- 📐 Aligns and structures table layout  
-- 🧱 Adds borders for readability  
+- 📂 Opens existing Excel workbooks
+- ✅ Validates the file before loading
+- 💾 Saves a new formatted workbook
+- ➕ Automatically adds a **Total** row
+- 🧮 Inserts SUM formulas dynamically
+- 💲 Formats monetary columns
+- 📏 Adjusts column widths
+- 🎨 Styles headers with custom fonts and colors
+- 📌 Freezes the header row
+- 🔍 Enables Excel Auto Filter
+- 📐 Centers worksheet content
+- 🧱 Adds borders for improved readability
 
 ---
 
 ## 🖥️ Demo
 
-### 🔍 Before Execution & Runtime Overview
+### Original Workbook
 
 <p align="center">
-  <img src="images/before.png" width="350"/>
-  <img src="images/terminal.png" width="350"/>
+<img src="images/before.png" width="700">
+</p>
+
+### Terminal Output
+
+<p align="center">
+<img src="images/terminal.png" width="700">
+</p>
+
+### Formatted Workbook
+
+<p align="center">
+<img src="images/after.png" width="700">
 </p>
 
 ---
 
-### ✨ Post-Execution Result
+## ⚙️ Tech Stack
 
-<p align="center">
-  <img src="images/after.png" width="500"/>
-</p>
----
-
-## 🛠️ Tech Stack
-
-- Python 3  
-- openpyxl  
-- pathlib  
-- sys  
+- Python 3
+- openpyxl
+- pathlib
+- sys
 
 ---
 
-## ⚡ How to Run
+## 🚀 How to Run
+
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/DevBlueprintLab/python-excel-file-formatter.git
-cd python-excel-file-formatter
+```
+
+### 2. Install openpyxl
+
+```bash
 pip install openpyxl
+```
+
+### 3. Run the script
+
+```bash
 python excel_formatter.py
+```
+
+### 4. Enter the path to an Excel workbook
+
+Example
+
+```
+C:\Users\YourName\Downloads\sales.xlsx
+```
+
+The program creates a new file:
+
+```
+updated_sales.xlsx
+```
+
+---
+
+## 📊 Example Output
+
+```
+Excel File Formatter
+====================
+
+Please enter the file path:
+C:\Users\User\Downloads\sales.xlsx
+
+✓ Workbook formatted successfully!
+
+Saved as:
+updated_sales.xlsx
+```
+
+---
+
+## 📁 Project Structure
+
+```
+python-excel-file-formatter/
+├── excel_formatter.py
+├── README.md
+└── images/
+    ├── before.png
+    ├── terminal.png
+    └── after.png
+```
+
+---
+
+## 📚 What I Learned
+
+- Reading existing Excel workbooks
+- Working with worksheets dynamically
+- Applying fonts, colors and borders
+- Formatting cells and numbers
+- Creating Excel formulas with Python
+- Detecting columns by their headers
+- Freezing panes and enabling filters
+- Saving modified workbooks safely
+- Building reusable Excel automation tools
+
+---
+
+## 🔮 Future Improvements
+
+- Support formatting multiple worksheets
+- Detect dates and format them automatically
+- Apply conditional formatting
+- Automatically resize columns based on content
+- Generate charts
+- Export formatting logs
+- Add a graphical user interface (GUI)
+
+---
+
+Created by **DevBlueprint Lab**
