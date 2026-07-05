@@ -1,4 +1,4 @@
-# 📊 Automated Excel Reporting Pipeline
+# 📊 Automated Excel File Formatter
 
 ![Python Version](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)
 ![Dependencies](https://img.shields.io/badge/Dependencies-openpyxl-orange)
@@ -52,3 +52,39 @@ The program works non-destructively: it reads the original workbook, applies for
 git clone https://github.com/DevBlueprintLab/python-excel-file-formatter.git
 cd python-excel-file-formatter
 pip install openpyxl
+```
+2. Run the tool
+```bash
+python excel_formatter.py
+```
+3. Execution example
+```bash
+Excel File Formatter
+====================
+
+Please enter the file path:
+C:\Users\User\Downloads\sales.xlsx
+
+✓ File loaded successfully
+✓ Formatting applied
+✓ Output saved as: updated_sales.xlsx
+```
+## 📁 Project Structure
+```
+python-excel-file-formatter/
+├── excel-file-formatter.py       # Main automation script
+├── README.md                     # Project documentation
+└── images/
+    ├── before.png
+    ├── terminal.png
+    └── after.png
+```
+---
+## 🔮 Roadmap & Future Improvements
+ * Support for multi-sheet processing
+ * Automatic detection of date columns
+ * Improved auto-sizing for large datasets
+ * Optional chart generation for summaries
+ * GUI version for non-technical users
+---
+Developed by DevBlueprint Lab
