@@ -72,7 +72,7 @@ C:\Users\User\Downloads\sales.xlsx
 ## 📁 Project Structure
 ```
 python-excel-file-formatter/
-├── excel-file-formatter.py       # Main automation script
+├── excel_file_formatter.py       # Main automation script
 ├── README.md                     # Project documentation
 └── images/
     ├── before.png
